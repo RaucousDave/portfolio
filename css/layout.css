@@ -73,6 +73,7 @@ nav ul li a {
 }
 form {
   flex-direction: column;
+  justify-content: center;
   width: 60%;
   margin-bottom: 30px;
 }
@@ -145,6 +146,10 @@ textarea::placeholder {
   .projects-container,
   .banner {
     padding: 5px;
+  }
+
+  form {
+    width: 100%;
   }
   .banner svg {
     width: 20px;
