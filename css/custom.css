@@ -1,0 +1,28 @@
+.whatsapp {
+  display: inline;
+  width: 100%;
+  transition: box-shadow 500ms ease;
+}
+.whatsapp-img {
+  display: flex;
+  justify-content: space-between;
+}
+.whatsapp-img a {
+  margin-left: 10px;
+  position: relative;
+}
+
+.whatsapp-img a::before {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  background-color: white;
+  height: 2px;
+  width: 0%;
+  transition: width 500ms ease; /* Remove transform transition */
+}
+
+.whatsapp-img a:hover::before {
+  width: 100%; /* Expands on hover */
+}

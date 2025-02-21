@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  color: white;
+  font-family: "Epilogue";
+}
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  padding-top: 2rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  cursor: default;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}

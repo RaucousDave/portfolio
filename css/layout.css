@@ -1,0 +1,139 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav {
+  background-color: #1a1a1a;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+header {
+  position: fixed;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding-bottom: 3rem;
+}
+nav ul {
+  display: flex;
+  padding: 1.5rem;
+}
+nav ul li a {
+  margin: 10px;
+}
+.navlinks {
+  transition: all 500ms ease;
+  position: relative;
+}
+
+.header {
+  margin-top: 3rem;
+  padding: 3rem;
+  height: 100vh;
+}
+/* Tech Stack Logos */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.banner-img {
+  display: inline-flex;
+  margin-right: 10px;
+}
+.banner svg {
+  width: 30px;
+  margin-right: 5px;
+}
+/* About sectio */
+.about-container {
+  padding: 3rem;
+  margin-bottom: 3rem;
+  height: 100%;
+}
+.projects-container {
+  padding: 2rem;
+  height: 100%;
+}
+.projects-display {
+  justify-content: space-between;
+}
+.about-container .paragraph {
+  font-size: 1rem;
+}
+.contact-container {
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 30px;
+}
+form input {
+  border-radius: 10px;
+}
+form input,
+textarea {
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+form input:focus {
+  border: 1px solid white;
+}
+a.submit {
+  background-color: white;
+  color: #1a1a1a;
+  padding: 10px 15px;
+  align-self: center;
+  border-radius: 10px;
+  position: relative;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 12px rgba(255, 0, 102, 0.8),
+    0px 0px 12px rgba(128, 0, 255, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+form input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.623);
+}
+
+@media (max-width: 768px) {
+  h1.title {
+    font-size: 2rem;
+  }
+  .header h1,
+  .header p {
+    margin-bottom: 30px;
+  }
+  p.paragraph {
+    font-size: 1.4rem;
+  }
+
+  .banner {
+    justify-content: center;
+    padding: 0;
+  }
+  .about-container {
+    padding: 10px;
+  }
+  .projects {
+    width: 100% !important;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    height: auto;
+  }
+}

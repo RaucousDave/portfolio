@@ -1,0 +1,76 @@
+.navlinks.active {
+  position: relative; /* Required for ::before to work */
+  background-color: white;
+  padding: 10px 15px;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: 0px 0px 12px rgba(255, 0, 102, 0.8),
+    0px 0px 12px rgba(128, 0, 255, 0.8); /* Glowing Effect */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navlinks.active::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 35px;
+  background: linear-gradient(45deg, #ff0048, #8000ff, #ff0048);
+  background-size: 300% 300%;
+  animation: glowing-border 3s ease infinite;
+  z-index: -1;
+}
+
+@keyframes glowing-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a.btn:active {
+  scale: 0.5;
+}
+.scale-up {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 500ms ease, transform 500ms ease;
+  will-change: opacity, transform;
+}
+.scale-up.show {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+a.submit::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #ff0048, #8000ff, #ff0048);
+  background-size: 300% 300%;
+  animation: glowing-border 3s ease infinite;
+  z-index: -1;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
+}
+
+a.submit:hover::before {
+  opacity: 1; /* Show on hover */
+}
+.whatsapp:hover {
+  /* filter: drop-shadow(0 0 8px rgb(50, 255, 50)); */
+  box-shadow: 3px 3px 3px rgb(50, 255, 50);
+}
