@@ -5,7 +5,7 @@ function About() {
     <>
       <section
         id="about"
-        className="py-20 bg-[var(--bg-color)] text-[var(--text-color)] text-center"
+        className="py-20 px-2 md:px-0 bg-[var(--bg-color)] text-[var(--text-color)] text-center"
       >
         <h2 className="text-4xl md:text-5xl font-heading mb-6">
           <span className="text-[var(--primary-accent)]">About Me</span>
