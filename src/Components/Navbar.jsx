@@ -16,7 +16,7 @@ function Navbar() {
             <a
               href={link.href}
               onClick={() => handleClick(link.href)}
-              className={`font-body text-sm md:text-base px-1 md:px-4 py-2 rounded-lg transition duration-200
+              className={`font-body text-sm md:text-base px-2 md:px-4 py-2 rounded-lg transition duration-200
                 ${
                   activeLink === link.href
                     ? "bg-[var(--primary-accent)] text-black shadow-[0_0_10px_var(--shadow-glow)]"
