@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme {
+  --font-heading: "IBM Plex Sans";
+  --font-body: "Inter";
+  --bg-color: #0f1117;
+  --text-color: #e5e5e5;
+  --highlight-hover: #11ff63;
+  --shadow-glow: rgba(0, 232, 255, 0.2);
+  --primary-accent: #00ffa3;
+  --secondary-accent: #00e0ff;
+  --neutral-accent: #00c8ff;
+}
