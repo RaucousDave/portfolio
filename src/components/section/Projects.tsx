@@ -34,11 +34,11 @@ export default function Projects() {
                     {project.title}
                   </h1>
                   <div className=" space-x-3 flex  sm:text-2xl text-stone-600">
-                    <a href={project.link}>
+                    <a href={project.link} target="_blank" rel="noreferrer">
                       {" "}
                       <Link className="hover:text-primary transition ease-linear" />
                     </a>
-                    <a href={project.github}>
+                    <a href={project.github} target="_blank">
                       {" "}
                       <FaGithub className="hover:text-primary transition ease-linear" />
                     </a>
