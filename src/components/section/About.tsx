@@ -12,6 +12,8 @@ const stacks = [
   "Bootstrap",
   "Typescript",
   "Git",
+  "Java",
+  "Supabase",
 ];
 
 export default function About() {
@@ -82,7 +84,7 @@ export default function About() {
               </div>
               <h3 className="">My Tech Stack</h3>
             </div>
-            <div className="flex mt-8 flex-wrap gap-3">
+            <div className="flex mt-8 mx-5 flex-wrap gap-3">
               {stacks.map((stack, index) => (
                 <p
                   key={index}

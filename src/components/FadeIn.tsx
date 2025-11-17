@@ -19,7 +19,7 @@ export default function FadeIn({ children, delay = 0 }: FadeInProps) {
       <motion.div
         className="absolute inset-0 bg-primary z-10"
         initial={{ x: 0 }}
-        animate={inView ? { x: "-100%" } : {}}
+        animate={inView ? { x: "-100%", opacity: 0 } : {}}
         transition={{
           duration: 0.6,
           ease: "easeInOut",
