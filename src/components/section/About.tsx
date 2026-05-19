@@ -8,11 +8,12 @@ const stacks = [
   "Framer-Motion",
   "Javascript",
   "React",
+  "Express",
+  "NextJs",
   "TailwindCSS",
   "Bootstrap",
   "Typescript",
   "Git",
-  "Java",
   "Supabase",
 ];
 

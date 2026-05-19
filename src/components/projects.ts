@@ -26,18 +26,10 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Noir Creative",
-    desc: "A minimal and responsive static page for a fictional ad agency. Developed using pure HTML, Tailwind CSS, and a bit of vanilla JavaScript, it captures the agency’s bold, modern identity in a single scroll.",
-    image: "/images/projects/noir-creative.png",
-    link: "https://nova-creative.vercel.app",
-    github: "https://github.com/RaucousDave/nova-creative",
-  },
-  {
-    id: 5,
-    title: "Ironcore Landing Page",
-    desc: "A sleek landing page concept for a fictional fitness brand. Built with React and Tailwind CSS, it showcases strong visual hierarchy, bold typography, and a modern layout tailored to gym enthusiasts.",
-    image: "/images/projects/ironcore.png",
-    link: "https://ironcore-dave.vercel.app",
-    github: "https://github.com/RaucousDave/ironcore",
+    title: "Streakly",
+    desc: "A gamified habit tracker centered on minimum viable habits, designed to make consistency feel achievable every day.",
+    image: "/images/projects/streakly.png",
+    link: "https://streakly-nu.vercel.app/",
+    github: "https://github.com/RaucousDave/streakly",
   },
 ];
