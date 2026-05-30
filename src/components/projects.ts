@@ -44,5 +44,6 @@ export const projects = [
     title: "Ai Ads Studio",
     desc: "An AI-powered ad creation platform that generates headlines, ad copy, and visuals from a single brief, helping users prepare campaigns for Meta, Google, TikTok, and client presentations. I tested API routes using Postman and provided feedback to improve reliability and user workflow.",
     image: "/images/projects/Ai-ads.png",
+    link: "https://ai-ads-studio-kappa.vercel.app/",
   },
 ];
