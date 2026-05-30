@@ -32,4 +32,17 @@ export const projects = [
     link: "https://streakly-nu.vercel.app/",
     github: "https://github.com/RaucousDave/streakly",
   },
+  {
+    id: 5,
+    title: "Student Registration Platform",
+    desc: "A centralized platform that helps instructors manage student assignments, monitor academic progress, and track performance through organized project and scoring systems.",
+    image: "/images/projects/Student-registry.png",
+    github: "https://github.com/RaucousDave/Student-registry",
+  },
+  {
+    id: 6,
+    title: "Ai Ads Studio",
+    desc: "An AI-powered ad creation platform that generates headlines, ad copy, and visuals from a single brief, helping users prepare campaigns for Meta, Google, TikTok, and client presentations. I tested API routes using Postman and provided feedback to improve reliability and user workflow.",
+    image: "/images/projects/Ai-ads.png",
+  },
 ];
