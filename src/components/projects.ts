@@ -46,4 +46,18 @@ export const projects = [
     image: "/images/projects/Ai-ads.png",
     link: "https://ai-ads-studio-kappa.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Devstash",
+    desc: "A Go-powered CLI tool that surfaces your most-used terminal commands, so you spend less time digging through shell history and more time shipping.",
+    image: "/images/projects/devstash.png",
+    github: "https://github.com/RaucousDave/devstash",
+    link: "https://devstash-landing-page.vercel.app/"
+  },
+  {
+    id: 8,
+    title: "Bucketflow",
+    desc: "A framework-agnostic npm package that gives backend developers a fast, plug-and-play way to add rate limiting to their APIs — supporting all the major algorithms (token bucket, sliding window, fixed window, and more), so you can pick the right strategy without rebuilding it from scratch every time.",
+    github: 'https://github.com/RaucousDave/bucketflow'
+  },
 ];

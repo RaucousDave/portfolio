@@ -9,14 +9,14 @@ const slideVariants = {
   animate: {
     x: "100%",
     transition: {
-      duration: 1,
+      duration: 0.8,
       ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
     },
   },
   exit: {
     x: "0%",
     transition: {
-      duration: 1,
+      duration: 0.8,
       ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
     },
   },
@@ -25,11 +25,12 @@ const slideVariants = {
 type Props = {
   children: ReactNode;
 };
+
 const contentVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { delay: 1, duration: 1.0 },
+    transition: { delay: 0.6, duration: 0.8 },
   },
 };
 
@@ -39,18 +40,18 @@ export default function PageWrapper({ children }: Props) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowContent(true);
-    }, 1000); // Wait for slide-in to finish
+    }, 600);
 
     return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <div className="relative overflow-hidden min-h-screen bg-background">
+    <div className="relative overflow-hidden min-h-screen bg-canvas">
       {/* Slide transition */}
       <AnimatePresence>
         <motion.div
           key="slider"
-          className="fixed top-0 left-0 w-full h-screen bg-primary-light z-50"
+          className="fixed top-0 left-0 w-full h-screen bg-surface-1 border-r border-hairline z-50 pointer-events-none"
           variants={slideVariants}
           initial="initial"
           animate="animate"

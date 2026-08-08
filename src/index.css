@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Poppins";
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv01" 1, "cv05" 1, "cv09" 1, "cv11" 1, "ss03" 1, "ss07" 1, "dlig" 1;
+    background-color: #090909;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
 }
 
 /* .link {

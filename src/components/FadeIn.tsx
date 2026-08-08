@@ -5,41 +5,38 @@ import type { ReactNode } from "react";
 type FadeInProps = {
   children: ReactNode;
   delay?: number;
+  direction?: "up" | "down" | "left" | "right";
 };
 
-export default function FadeIn({ children, delay = 0 }: FadeInProps) {
+export default function FadeIn({ children, delay = 0, direction = "up" }: FadeInProps) {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
-  return (
-    <div className="relative overflow-hidden inline-block" ref={ref}>
-      {/* Background curtain */}
-      <motion.div
-        className="absolute inset-0 bg-primary z-10"
-        initial={{ x: 0 }}
-        animate={inView ? { x: "-100%", opacity: 0 } : {}}
-        transition={{
-          duration: 0.6,
-          ease: "easeInOut",
-          delay,
-        }}
-      />
+  const getOffset = () => {
+    switch (direction) {
+      case "up": return { y: 24, x: 0 };
+      case "down": return { y: -24, x: 0 };
+      case "left": return { x: 24, y: 0 };
+      case "right": return { x: -24, y: 0 };
+    }
+  };
 
-      {/* Content below */}
-      <motion.div
-        className="relative z-0"
-        initial={{ opacity: 0, y: 20 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{
-          duration: 0.5,
-          ease: "easeOut",
-          delay: delay + 0.6, // starts after bg slides out
-        }}
-      >
-        {children}
-      </motion.div>
-    </div>
+  const offset = getOffset();
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, ...offset }}
+      animate={inView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, ...offset }}
+      transition={{
+        duration: 0.6,
+        ease: [0.16, 1, 0.3, 1], // cubic-bezier smooth framer curve
+        delay,
+      }}
+    >
+      {children}
+    </motion.div>
   );
 }
