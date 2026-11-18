@@ -23,7 +23,7 @@ export default function Projects() {
             <div className="group bg-surface-1 border border-hairline hover:border-hairline/80 rounded-xl overflow-hidden transition-all duration-300 flex flex-col h-full hover:shadow-2xl">
               {/* Project Image Preview Container */}
               {project.image ? (
-                <div className="bg-surface-2 p-6 sm:p-8 aspect-video flex items-center justify-center overflow-hidden border-b border-hairline relative">
+                <div className="bg-surface-2 p-6 sm:p-8  flex items-center justify-center overflow-hidden border-b border-hairline relative">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -39,7 +39,9 @@ export default function Projects() {
                     <span className="text-xs font-mono uppercase tracking-wider text-ink-muted block mb-1">
                       CLI & Backend Library
                     </span>
-                    <h4 className="text-xl font-medium text-ink">{project.title}</h4>
+                    <h4 className="text-xl font-medium text-ink">
+                      {project.title}
+                    </h4>
                   </div>
                 </div>
               )}
@@ -83,7 +85,9 @@ export default function Projects() {
                 </div>
 
                 <div className="pt-4 border-t border-hairline-soft flex items-center justify-between">
-                  <span className="text-xs font-mono text-ink-muted">0{project.id} // Showcase</span>
+                  <span className="text-xs font-mono text-ink-muted">
+                    0{project.id} // Showcase
+                  </span>
                   {project.link && (
                     <a
                       href={project.link}

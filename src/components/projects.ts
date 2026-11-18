@@ -52,12 +52,24 @@ export const projects = [
     desc: "A Go-powered CLI tool that surfaces your most-used terminal commands, so you spend less time digging through shell history and more time shipping.",
     image: "/images/projects/devstash.png",
     github: "https://github.com/RaucousDave/devstash",
-    link: "https://devstash-landing-page.vercel.app/"
+    link: "https://devstash-landing-page.vercel.app/",
   },
   {
     id: 8,
     title: "Bucketflow",
     desc: "A framework-agnostic npm package that gives backend developers a fast, plug-and-play way to add rate limiting to their APIs — supporting all the major algorithms (token bucket, sliding window, fixed window, and more), so you can pick the right strategy without rebuilding it from scratch every time.",
-    github: 'https://github.com/RaucousDave/bucketflow'
+    github: "https://github.com/RaucousDave/bucketflow",
+  },
+  {
+    id: 9,
+    title: "Sentri Traces",
+    desc: "A distributed tracing system built in Go that collects spans from your services and stores them in PostgreSQL, so you can follow a single request across services and see where time is being spent.",
+    image: "/images/projects/sentri-traces.png",
+    github: "https://github.com/RaucousDave/distributed-tracer-system",
+  },
+  {
+    id: 10,
+    title: "Streakly Mobile",
+    desc: "The mobile version of Streakly, bringing minimum viable habits and daily streaks to your phone so staying consistent takes a few taps.",
   },
 ];
